@@ -6,15 +6,7 @@ The gaming industry is entering 2026 with structural tailwinds that go well beyo
 
 Roblox has emerged as one of the fastest-growing ecosystems in gaming. By the third quarter of 2025, the platform's daily active users exceeded 150 million — nearly doubling year-over-year — while bookings surged approximately 70% compared to the same period in 2024. Average bookings per daily active user (ABPDAU) remained stable in the $12–13 range, indicating that growth was driven by genuine user expansion rather than monetization gimmicks.
 
-What stands out is the acceleration of bookings growth after a period of more moderate gains:
-
-| Period | Bookings YoY Growth | Context |
-|--------|-------------------|---------|
-| 3Q 2023 | ~20% | Post-pandemic normalization |
-| 1Q 2024 | ~22% | Steady baseline pace |
-| 3Q 2024 | ~34% | Acceleration begins |
-| 1Q 2025 | ~31% | Sustained momentum |
-| 3Q 2025 | ~70% | Breakout quarter |
+Over the two-year stretch from 3Q 2023 to 3Q 2025, Roblox bookings grew at an average of roughly 11% quarter-over-quarter on a compound basis — more than doubling in cumulative terms.
 
 Two UGC titles exemplify the platform's creative potential:
 
@@ -27,21 +19,19 @@ On the creator economy side, Roblox's Developer Exchange (DevEX) program now dis
 
 ## 2. IP Portfolio Building Through M&A
 
-Korean game publishers are increasingly pursuing acquisitions not just for studio capacity, but specifically to accumulate intellectual property. The strategic logic is straightforward: owning a diversified IP portfolio reduces dependency on any single franchise and opens doors to cross-media licensing opportunities.
+Across the global gaming industry, IP portfolio building through M&A has become a defining strategic theme. The logic is straightforward: owning a diversified IP catalog reduces dependency on any single franchise and opens doors to cross-media licensing.
 
 Several notable transactions in 2024–2025 illustrate the trend:
 
 | Acquirer | Target | Period | Strategic Angle |
-|----------|--------|--------|----------------|
-| Shift Up | ADK Emotions | 2024 | Animation and IP pipeline expansion |
+|:--------:|:------:|:------:|:----------------|
+| Take-Two | Gearbox Entertainment | 2024 | Borderlands franchise consolidation |
 | KRAFTON | Tango Gameworks | 2024 | Action IP catalog (Hi-Fi Rush franchise) |
-| Nexon | Atlus (stake) | 2025 | RPG IP access (Persona, Shin Megami Tensei) |
-| Hybe IM | Undisclosed studio | 2025 | Entertainment IP cross-pollination |
-| Netmarble | Undisclosed studio | 2025 | IP diversification across genres |
+| Scopely | Niantic Games Division | 2025 | Pokemon GO and licensed mega-IP portfolio |
+| Tencent | Ubisoft Vantage (stake) | 2025 | Assassin's Creed, Far Cry, Rainbow Six access |
+| MTG | Plarium | 2024 | RAID: Shadow Legends evergreen IP |
 
-This mirrors what Western mega-publishers like Tencent, Microsoft, and EA have pursued over the past decade. The difference is that Korean companies — historically mobile-first — are now building multi-platform IP libraries that can support franchising across games, animation, and merchandise.
-
-KRAFTON is a standout example, having expanded its IP portfolio significantly over 2024–2025 through a series of strategic acquisitions and partnership deals, growing from a concentrated PUBG-centric catalog into a diversified multi-genre portfolio.
+Among Korean publishers, KRAFTON is a standout example, having expanded its IP portfolio significantly over 2024–2025 through a series of strategic acquisitions and partnership deals — growing from a concentrated PUBG-centric catalog into a diversified multi-genre portfolio.
 
 ## 3. Platform Fee Structures Under Pressure
 
@@ -56,30 +46,21 @@ Several companies and platforms have already begun testing alternative structure
 | Korean publishers | Adopted alternative billing options enabled by Korean regulatory framework |
 | Apple (small developers) | Reduced commission to 15% for developers earning under $1M annually |
 
-The financial implications are meaningful. If platform fees were reduced by 5 to 10 percentage points, operating profit margins for mobile-heavy game companies could see material improvement:
-
-| Company Profile | Current OPM (est.) | OPM with 5pp Fee Cut | OPM with 10pp Fee Cut |
-|----------------|-------------------|---------------------|----------------------|
-| Mobile-heavy publisher (e.g., Netmarble, Com2uS) | ~15–19% | ~19–23% | ~23–27% |
-| Diversified publisher (e.g., KRAFTON, Pearl Abyss) | ~30–35% | ~33–37% | ~35–42% |
-
-Companies with higher mobile revenue concentration stand to benefit the most, while studios with diversified PC and console revenue streams would see proportionally smaller but still positive margin effects.
+If platform fees were reduced by even 5 to 10 percentage points, mobile-heavy publishers could see meaningful operating margin improvement — particularly those with high mobile revenue concentration.
 
 ## 4. AI Integration Across the Development Pipeline
 
 Artificial intelligence has moved beyond the experimental phase in game development. Studios of all sizes are deploying AI tools across the production chain — from procedural content generation and QA testing to AI-driven NPCs capable of dynamic, context-aware interactions with players.
 
 | Studio | Application Area | Notable Implementation |
-|--------|-----------------|----------------------|
-| KRAFTON | Full-stack AI integration | Operating 150+ internal AI models; LLM-assisted tools across coding, art, and testing |
-| Nexon | AI NPCs | Planning AI-driven NPC deployment in MapleStory ecosystem |
-| Netmarble | Nvidia ACE integration | Building AI-powered character interaction tools using Nvidia's Avatar Cloud Engine |
-| Hybe IM | Content automation | AI-assisted generation pipeline for live-service game content |
-| Line Games | Development productivity | Integrating AI into core development workflows |
+|:------:|:----------------:|:-----------------------|
+| Ubisoft | AI-powered NPCs | "Teammates" prototype using Google Gemini for voice-responsive, personality-driven NPC companions |
+| EA | AI-assisted content creation | Stability AI partnership; AI-generated 150 stadiums and 11,000 player likenesses in EA Sports |
+| Roblox | AI world generation | "Roblox Cube" generative AI system for creating 3D objects and environments from text prompts |
+| Epic Games | AI-integrated engine tools | AI Assistant in Unreal Engine 5.7 and "Persona Device" for AI-driven NPC personalities |
+| Square Enix | AI-automated QA | Targeting 70% QA/debugging automation by 2027; AI chatbot embedded in game engine since mid-2024 |
 
-Chinese studios are arguably the furthest ahead in adopting AI at scale, with several major publishers reporting that AI tools are now embedded into daily workflows for art asset creation, dialogue writing, and automated testing.
-
-Among Korean developers, KRAFTON stands out for the sheer scale of its investment — operating over 150 AI models internally and building proprietary tools that span code generation, concept art, game balancing, and NPC behavior systems. The company has positioned AI not as a bolt-on experiment but as a core infrastructure layer.
+What distinguishes the current wave is the breadth of adoption — AI is no longer confined to a single studio function but is being embedded across art pipelines, QA workflows, NPC behavior, and world-building tools simultaneously. The shift from experimental pilots to production-grade integration marks a structural change in how games are built.
 
 ## 5. The PC and Console Resurgence
 
@@ -87,12 +68,7 @@ After years of mobile dominance, the PC and console segments are entering a peri
 
 Global gaming revenue forecasts by platform tell the story:
 
-| Platform | 2022 ($B) | 2025F ($B) | 2028F ($B) | CAGR '22–'25 | CAGR '25–'28 |
-|----------|----------|-----------|-----------|-------------|-------------|
-| Console | ~37 | ~38 | ~44 | ~1.0% | ~4.7% |
-| Mobile | ~101 | ~109 | ~118 | ~2.7% | ~2.8% |
-| PC | ~46 | ~51 | ~57 | ~3.5% | ~3.7% |
-| **Total** | **~184** | **~198** | **~219** | **~2.5%** | **~3.4%** |
+<canvas id="platform-revenue-chart" style="width:100%;max-width:780px;margin:1.5em auto;display:block;" height="370"></canvas>
 
 Mobile's share of the overall market is projected to edge down from approximately 55% in 2022 to around 53–54% by 2028, while console's share grows modestly on the back of a stronger hardware cycle and premium content slate.
 

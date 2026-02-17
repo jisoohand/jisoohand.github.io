@@ -132,6 +132,9 @@
       border-radius: 6px;
       margin: 16px 0;
     }
+    .post-body table {
+      width: 100%;
+    }
 
     .back-link {
       display: inline-block;
@@ -177,6 +180,7 @@
   <footer id="footer"></footer>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     async function loadJSON(path) {
       const res = await fetch(path);
@@ -216,6 +220,105 @@
       `;
 
       document.getElementById('post-body').innerHTML = marked.parse(md);
+
+      // Initialize platform revenue chart if canvas exists
+      const chartCanvas = document.getElementById('platform-revenue-chart');
+      if (chartCanvas) {
+        new Chart(chartCanvas, {
+          type: 'line',
+          data: {
+            labels: ['2022', '2025F', '2028F'],
+            datasets: [
+              {
+                label: 'Console',
+                data: [37, 38, 44],
+                borderColor: '#2d5a8e',
+                backgroundColor: '#2d5a8e',
+                borderWidth: 2.5,
+                pointRadius: 5,
+                pointBackgroundColor: '#2d5a8e',
+                tension: 0.3
+              },
+              {
+                label: 'Mobile',
+                data: [101, 109, 118],
+                borderColor: '#3a8a5c',
+                backgroundColor: '#3a8a5c',
+                borderWidth: 2.5,
+                pointRadius: 5,
+                pointBackgroundColor: '#3a8a5c',
+                tension: 0.3
+              },
+              {
+                label: 'PC',
+                data: [46, 51, 57],
+                borderColor: '#d4832f',
+                backgroundColor: '#d4832f',
+                borderWidth: 2.5,
+                pointRadius: 5,
+                pointBackgroundColor: '#d4832f',
+                tension: 0.3
+              }
+            ]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'top',
+                labels: {
+                  font: { size: 13, family: "'Segoe UI', 'Helvetica Neue', Arial, sans-serif" },
+                  usePointStyle: true,
+                  padding: 20
+                }
+              },
+              tooltip: {
+                callbacks: {
+                  label: function(context) {
+                    return context.dataset.label + ': $' + context.parsed.y + 'B';
+                  }
+                }
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: false,
+                min: 20,
+                max: 130,
+                ticks: {
+                  callback: function(value) { return '$' + value + 'B'; },
+                  font: { size: 12 },
+                  color: '#555'
+                },
+                grid: { color: '#e0e0e0' }
+              },
+              x: {
+                ticks: {
+                  font: { size: 13 },
+                  color: '#555'
+                },
+                grid: { display: false }
+              }
+            }
+          },
+          plugins: [{
+            afterDatasetsDraw: function(chart) {
+              const ctx = chart.ctx;
+              ctx.font = '11px "Segoe UI", "Helvetica Neue", Arial, sans-serif';
+              ctx.textAlign = 'center';
+              chart.data.datasets.forEach(function(dataset, i) {
+                const meta = chart.getDatasetMeta(i);
+                meta.data.forEach(function(point, index) {
+                  const value = '$' + dataset.data[index] + 'B';
+                  ctx.fillStyle = dataset.borderColor;
+                  ctx.fillText(value, point.x, point.y - 12);
+                });
+              });
+            }
+          }]
+        });
+      }
 
       document.getElementById('footer').innerHTML =
         `&copy; ${new Date().getFullYear()} ${profile.name} &middot; <a href="mailto:${profile.email}">${profile.email}</a>`;
