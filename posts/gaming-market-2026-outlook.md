@@ -68,7 +68,9 @@ After years of mobile dominance, the PC and console segments are entering a peri
 
 Global gaming revenue forecasts by platform tell the story:
 
-<canvas id="platform-revenue-chart" style="width:100%;max-width:780px;margin:1.5em auto;display:block;" height="370"></canvas>
+<div style="width:100%;max-width:780px;margin:1.5em auto;">
+  <canvas id="platform-revenue-chart" height="370"></canvas>
+</div>
 
 Mobile's share of the overall market is projected to edge down from approximately 55% in 2022 to around 53–54% by 2028, while console's share grows modestly on the back of a stronger hardware cycle and premium content slate.
 
