@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Languages",
+    "items": ["Korean (Native)", "English (Full Professional)"]
+  },
+  {
+    "category": "Certificates",
+    "items": ["Certified Investment Manager"]
+  },
+  {
+    "category": "Technical Skills",
+    "items": ["Excel / VBA", "PowerPoint", "Python", "Google Spreadsheets", "Apps Script"]
+  },
+  {
+    "category": "Domain",
+    "items": ["Investor Relations", "Financial Analysis", "Equity Administration"]
+  }
+]
