@@ -221,52 +221,6 @@
       color: var(--gray);
     }
 
-    /* Posts */
-    .post-list {
-      list-style: none;
-      padding: 0;
-    }
-    .post-item {
-      display: block;
-      padding: 20px;
-      margin-bottom: 12px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      text-decoration: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .post-item:hover {
-      border-color: var(--accent);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
-    .post-item-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 6px;
-    }
-    .post-item-title {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--dark);
-    }
-    .post-item-date {
-      font-size: 0.85rem;
-      color: var(--light-gray);
-      white-space: nowrap;
-    }
-    .post-item-summary {
-      font-size: 0.9rem;
-      color: var(--gray);
-    }
-    .no-posts {
-      color: var(--light-gray);
-      font-size: 0.95rem;
-    }
-
     /* Footer */
     footer {
       background: var(--navy);
@@ -308,7 +262,7 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#awards">Awards</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#posts">Posts</a></li>
+      <li><a href="posts.html">Posts</a></li>
     </ul>
   </nav>
 
@@ -317,7 +271,6 @@
     <section id="education"></section>
     <section id="awards"></section>
     <section id="skills"></section>
-    <section id="posts"></section>
   </div>
 
   <footer id="footer"></footer>
@@ -335,13 +288,12 @@
     }
 
     async function render() {
-      const [profile, experience, education, awards, skills, posts] = await Promise.all([
+      const [profile, experience, education, awards, skills] = await Promise.all([
         loadJSON('data/profile.json'),
         loadJSON('data/experience.json'),
         loadJSON('data/education.json'),
         loadJSON('data/awards.json'),
         loadJSON('data/skills.json'),
-        loadJSON('data/posts.json'),
       ]);
 
       // Hero
@@ -419,26 +371,6 @@
             </div>
           `).join('')}
         </div>
-      `;
-
-      // Posts
-      const sortedPosts = posts.sort((a, b) => b.date.localeCompare(a.date));
-      document.getElementById('posts').innerHTML = `
-        <h2 class="section-title">Posts</h2>
-        ${sortedPosts.length === 0
-          ? '<p class="no-posts">No posts yet.</p>'
-          : `<div class="post-list">
-              ${sortedPosts.map(p => `
-                <a class="post-item" href="post.html?slug=${encodeURIComponent(p.slug)}">
-                  <div class="post-item-header">
-                    <span class="post-item-title">${escapeHTML(p.title)}</span>
-                    <span class="post-item-date">${escapeHTML(p.date)}</span>
-                  </div>
-                  <p class="post-item-summary">${escapeHTML(p.summary)}</p>
-                </a>
-              `).join('')}
-            </div>`
-        }
       `;
 
       // Footer
