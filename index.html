@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jisoo Son</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --navy: #1a2744;
+      --dark: #222;
+      --gray: #555;
+      --light-gray: #888;
+      --bg: #fafafa;
+      --white: #fff;
+      --accent: #2d5a8e;
+      --border: #e0e0e0;
+    }
+
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      color: var(--dark);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    /* Hero */
+    .hero {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+    .hero .tagline {
+      font-size: 1.15rem;
+      color: #b0c4de;
+      margin-bottom: 24px;
+    }
+    .hero .contact-row {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+    .hero .contact-row a {
+      color: #b0c4de;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .hero .contact-row a:hover { color: #fff; }
+    .hero .contact-row span { color: #6e87a8; }
+
+    /* Navigation */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 0 20px;
+    }
+    nav a {
+      display: block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: var(--gray);
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      transition: color 0.2s, border-color 0.2s;
+      border-bottom: 2px solid transparent;
+    }
+    nav a:hover, nav a.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    /* Sections */
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    section {
+      padding: 56px 0;
+    }
+    section + section {
+      border-top: 1px solid var(--border);
+    }
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 32px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    /* Experience & Education Cards */
+    .card {
+      margin-bottom: 36px;
+    }
+    .card:last-child { margin-bottom: 0; }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 4px;
+    }
+    .card-header h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+    .card-header .date {
+      font-size: 0.9rem;
+      color: var(--light-gray);
+      white-space: nowrap;
+    }
+    .card-sub {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .card-sub .role {
+      font-size: 1rem;
+      color: var(--accent);
+      font-style: italic;
+    }
+    .card-sub .location {
+      font-size: 0.9rem;
+      color: var(--light-gray);
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .card ul li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: var(--gray);
+    }
+    .card ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    /* Awards */
+    .awards-list {
+      list-style: none;
+      padding: 0;
+    }
+    .awards-list li {
+      padding: 10px 0;
+      font-size: 0.95rem;
+      color: var(--gray);
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .awards-list li:last-child { border-bottom: none; }
+    .awards-list .award-name { font-weight: 600; color: var(--dark); }
+    .awards-list .award-note {
+      font-size: 0.85rem;
+      color: var(--light-gray);
+      margin-left: 4px;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    .skill-category h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill-tag {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      color: var(--gray);
+    }
+
+    /* Footer */
+    footer {
+      background: var(--navy);
+      color: #6e87a8;
+      text-align: center;
+      padding: 32px 20px;
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: #b0c4de;
+      text-decoration: none;
+    }
+    footer a:hover { color: #fff; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .hero { padding: 56px 20px 40px; }
+      .hero h1 { font-size: 2rem; }
+      .hero .contact-row { flex-direction: column; gap: 8px; }
+      nav ul { gap: 0; }
+      nav a { padding: 12px 12px; font-size: 0.8rem; }
+      .skills-grid { grid-template-columns: 1fr; gap: 20px; }
+      .card-header, .card-sub { flex-direction: column; gap: 2px; }
+    }
+
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Jisoo Son</h1>
+    <p class="tagline">Investor Relations Professional</p>
+    <div class="contact-row">
+      <a href="mailto:luceson6@gmail.com">luceson6@gmail.com</a>
+      <span>|</span>
+      <span>Seongnam-si, Gyeonggi-do, Korea</span>
+    </div>
+  </header>
+
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title">Work Experience</h2>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Wemade Max</h3>
+          <span class="date">Aug 2025 &ndash; Present</span>
+        </div>
+        <div class="card-sub">
+          <span class="role">Associate, IR Team</span>
+          <span class="location">Seongnam, Korea</span>
+        </div>
+        <ul>
+          <li>Performed core IR responsibilities including timely disclosures, shareholder meetings preparation, analyst communications, stock-market monitoring, and equity administration</li>
+          <li>Supported board operations by preparing board materials and organizing meeting calendars for regular board meetings</li>
+          <li>Planned and executed IR programs at major industry events including G-STAR 2025</li>
+          <li>Analyzed market, industry, and investment community research to provide insights to C-level executives</li>
+          <li>Prepared daily CEO briefings on company stock performance, peer activity, and major global market movements</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Wemade</h3>
+          <span class="date">Feb 2023 &ndash; Aug 2025</span>
+        </div>
+        <div class="card-sub">
+          <span class="role">Associate, IR Division</span>
+          <span class="location">Seongnam, Korea</span>
+        </div>
+        <ul>
+          <li>Prepared periodic &amp; timely disclosures to Korea Exchange (KRX) and Finance Services Commission (FSC) in both Korean and English to ensure compliance and timely market communication</li>
+          <li>Developed 10+ quarterly earnings materials, including earnings presentations and scripts, translating complex financial and industry data into clear, investor-focused content</li>
+          <li>Produced 15+ structured market and industry analysis reports to support senior management's strategic decisions</li>
+          <li>Administered equity-related processes including CB conversions, new share listings, shareholder register maintenance, and corresponding documentation with Korea Exchange (KRX)</li>
+          <li>Supported IR events such as NDRs, IR Conferences, and Corporate Days through materials preparation, introductory remarks, and meeting summaries</li>
+          <li>Maintained active communication with analysts by operating a Telegram channel for timely company updates, and handled inquiry calls from individual shareholders</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>National University of Singapore</h3>
+          <span class="date">Aug 2021 &ndash; Jan 2023</span>
+        </div>
+        <div class="card-sub">
+          <span class="role">MSc, Finance</span>
+          <span class="location">Singapore</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Ewha Womans University</h3>
+          <span class="date">Mar 2015 &ndash; Aug 2020</span>
+        </div>
+        <div class="card-sub">
+          <span class="role">BA, Social Welfare &amp; Economics</span>
+          <span class="location">Republic of Korea</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards">
+      <h2 class="section-title">Awards &amp; Scholarships</h2>
+      <ul class="awards-list">
+        <li><span class="award-name">Major Leadership Scholarship</span><span class="award-note">&mdash; 2016 Fall, 2017 Fall</span></li>
+        <li><span class="award-name">Boston Alumnae Scholarship</span><span class="award-note">&mdash; 2018 Spring</span></li>
+        <li><span class="award-name">Civil Service Exam Merit Scholarship</span><span class="award-note">&mdash; 2018 Fall &middot; Passed the 1st Round of Civil Service Examination</span></li>
+        <li><span class="award-name">Senior Mentor Scholarship</span><span class="award-note">&mdash; 2016 Fall</span></li>
+        <li><span class="award-name">Civil Service Exam Support Scholarship</span><span class="award-note">&mdash; 2018 Full Year</span></li>
+        <li><span class="award-name">Ewha Scholarship</span><span class="award-note">&mdash; 2020 Spring</span></li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Languages</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Korean (Native)</span>
+            <span class="skill-tag">English (Full Professional)</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Certificates</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Certified Investment Manager</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Technical Skills</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Excel / VBA</span>
+            <span class="skill-tag">PowerPoint</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Google Spreadsheets</span>
+            <span class="skill-tag">Apps Script</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Domain</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Investor Relations</span>
+            <span class="skill-tag">Financial Analysis</span>
+            <span class="skill-tag">Equity Administration</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Jisoo Son &middot; <a href="mailto:luceson6@gmail.com">luceson6@gmail.com</a>
+  </footer>
+
+</body>
+</html>
