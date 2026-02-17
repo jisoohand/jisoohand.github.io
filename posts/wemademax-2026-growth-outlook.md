@@ -6,9 +6,9 @@ Wemade Max closed FY2025 with **KRW 148.8 billion in consolidated revenue**, nea
 
 At the core of Wemade Max's revenue engine is **Night Crows**, which surpassed **KRW 650 billion in cumulative revenue** since its April 2023 launch. The title continues to generate meaningful cash flow across multiple global markets.
 
-Meanwhile, the legacy IP **Silkroad Online** recorded over **30% revenue growth** in 2025, extending a five-year CAGR of approximately 20%. For an IP that has been in operation for over two decades, this level of growth signals strong community engagement and effective live-service management — qualities that translate directly into revenue predictability.
+Meanwhile, the legacy IP **Silkroad** recorded over **30% revenue growth** in 2025, extending a five-year CAGR of approximately 20%. For an IP that has been in operation for over two decades, this level of growth signals strong community engagement and effective live-service management — qualities that translate directly into revenue predictability.
 
-**Lost Sword** and **Akma-dan Dolgyeok!** (which topped both the Korean App Store and Japanese charts) further demonstrate the company's ability to launch and scale titles across different markets and genres.
+**Lost Sword** and **Hellsquad Rrrush!** (which topped both the Korean App Store and Japanese charts) further demonstrate the company's ability to launch and scale titles across different markets and genres.
 
 ## Operating Loss in Context: Strategic Investment, Not Structural Weakness
 
@@ -22,13 +22,13 @@ What makes the 2026 outlook particularly compelling from an IR perspective is th
 
 | Title | Genre | Target Launch | Studio |
 |-------|-------|--------------|--------|
-| Night Crows 2 | MMORPG | H2 2026 | Mad Engine |
+| Night Crows 2 | MMORPG | H2 2026 | Madngine |
 | Mir 5 | MMORPG | H2 2026 | Wemade Next |
 | Noah | Subculture RPG | Q4 2026 | Wemade Connect |
-| Hundredth Note | Subculture RPG | Q4 2026 | Wemade Connect |
-| Midnight Walkers | Zombie Extraction Shooter | Q3 2026 | One Way Ticket |
-| Windrunner (New) | Casual | 2026 | Lightcon |
-| Project TAL | AAA Open-World Action RPG | 2027 | Mad Engine |
+| Hundred Note | Subculture RPG | Q4 2026 | Wemade Connect |
+| The Midnight Walkers | Zombie Extraction Shooter | Q3 2026 | OneWay Ticket |
+| WIND RUNNER: Idle | Casual | 2026 | Lightcon |
+| Project TAL | AAA Open-World Action RPG | 2027 | Madngine |
 
 This is no longer a single-IP story. Wemade Max is evolving into a **multi-studio, multi-genre portfolio company** — a structural shift that, if executed well, reduces title concentration risk and creates multiple potential revenue catalysts.
 
