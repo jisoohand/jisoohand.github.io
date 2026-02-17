@@ -12,7 +12,7 @@ Meanwhile, the legacy IP **Silkroad** recorded over **30% revenue growth** in 20
 
 ## Operating Loss in Context: Strategic Investment, Not Structural Weakness
 
-The KRW 48.7 billion operating loss warrants context. Wemade Max has been scaling its workforce and accelerating development pipelines across **five specialized studios** (Mad Engine, Wemade Connect, Wemade Next, One Way Ticket Studio, and Lightcon). This is a deliberate, front-loaded investment cycle — not a sign of deteriorating fundamentals.
+The KRW 48.7 billion operating loss warrants context. Wemade Max has been scaling its workforce and accelerating development pipelines across **five specialized studios** (Madngine, Wemade Connect, Wemade Next, OneWay Ticket Studio, and Lightcon). This is a deliberate, front-loaded investment cycle — not a sign of deteriorating fundamentals.
 
 Historically, game companies that invest counter-cyclically in content development tend to outperform peers when titles reach commercialization. With multiple high-profile launches slated for 2026–2027, the current loss profile should be evaluated in the context of the company's multi-year roadmap.
 
